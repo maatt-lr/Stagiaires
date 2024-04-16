@@ -12,6 +12,7 @@ const server = http.createServer((req, res) => {
 
             <head>
             <title>Bienvenue</title>
+            <link rel="icon" href="/ALE_favicon.ico" type="image/x-icon">
             <meta charset="UTF-8">
             <style>
             body {
@@ -59,6 +60,13 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'image/jpeg');
         imgStream.pipe(res);
+    } else if (req.url === '/ALE_favicon.ico') {
+        const faviconPath = path.join(__dirname, 'ALE_favicon.ico');
+        const faviconStream = fs.createReadStream(faviconPath);
+    
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'image/x-icon');
+        faviconStream.pipe(res);
     } else {
         res.statusCode = 404;
         res.end('Not found');
