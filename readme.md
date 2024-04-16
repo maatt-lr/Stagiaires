@@ -27,10 +27,6 @@ Après avoir installé le projet, vous pouvez le démarrer avec `node server_nod
 
 Si vous souhaitez contribuer à ce projet, veuillez suivre les directives de contribution.
 
-## Licence
-
-Ce projet est sous licence MIT. Pour plus d'informations, voir le fichier `LICENSE`.
-
 ## Contact
 
 Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter.
