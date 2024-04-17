@@ -1,0 +1,9 @@
+cd: Change directory
+ls: List files and directories
+pwd: Print working directory
+mkdir: Make directory
+rmdir: Remove directory
+touch: Create a new file
+rm: Remove files and directories
+cp: Copy files and directories
+mv: Move or rename files and directories
