@@ -7,51 +7,44 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
         res.end(`
-            <!DOCTYPE html>
-            <html>
-
-            <head>
+        <!DOCTYPE html>
+        <html>
+        <head>
             <title>Bienvenue</title>
             <link rel="icon" href="/ALE_favicon.ico" type="image/x-icon">
             <meta charset="UTF-8">
             <style>
-            body {
-            text-align: center;
-            }
-            .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 25%;
-            height: 25%;
-            }
+                body {
+                    text-align: center;
+                }
+                .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 25%;
+                    height: 25%;
+                }
             </style>
-            </head>
-
-            <body>
+        </head>
+        <body>
             <img src="/Logo_ALE.jpeg" alt="Logo" class="center">
-
             <h1>Bonjour les stagiaires</h1>
-
             <p> Voici un serveur HTTP en Node.js</p>
             <p> <a href="/Logo_ALE.jpeg">Logo ALE</a></p>
-
             <!-- Exemple Simple de fonctions en HTML --> 
-
             <p> Cliquez sur le bouton pour afficher "Hello World" dans un élément p (paragraphe) avec l'id="demo".</p>
             <p> <strong>Exemple:</strong></p>
             <button onclick="myFunction()">Cliquez ici</button>
             <br>
             <p id="demo"></p>
-
             <script>
-            function myFunction() {
-            document.getElementById("demo").innerHTML = "Hello World";
-            }
+                function myFunction() {
+                    document.getElementById("demo").innerHTML = "Hello World";
+                }
             </script>
-
-            </body>
-            </html>
+        </body>
+        </html>
+        
         `);
     } else if (req.url === '/Logo_ALE.jpeg') {
         const imgPath = path.join(__dirname, 'Logo_ALE.jpeg');

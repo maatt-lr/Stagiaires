@@ -6,4 +6,4 @@ rmdir: Remove directory
 touch: Create a new file
 rm: Remove files and directories
 cp: Copy files and directories
-mv: Move or rename files and directories
+mv: Move or rename files and directories 
