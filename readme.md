@@ -17,7 +17,6 @@ Pour installer ce projet, suivez les étapes suivantes :
 
 1. Clonez le dépôt : `git clone <url-du-dépôt>`
 2. Naviguez vers le répertoire du projet : `cd <nom-du-projet>`
-3. Installez les dépendances : `npm install`
 
 ## Utilisation
 
